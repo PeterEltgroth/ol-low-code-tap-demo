@@ -1,0 +1,27 @@
+# Enable to include message property in default response error model
+#server:
+#  error:
+#    include-message: always
+
+ol:
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wtaHViIiwidmFsaWRfZm9yIjo2MCwiaXNzdWVkX2F0IjoiMjAyMi0wNi0wN1QxNToxODozOS43MTA5NjEzODlaIiwiZXhwaXJ5X2RhdGUiOiIyMDIyLTA4LTA2VDE1OjE4OjM5LjcwOTMwNTMxM1oiLCJjdXN0b21lcl9uYW1lIjoiVk13YXJlIC0gcGVsdGdyb3RoQHZtd2FyZS5jb20iLCJjdXN0b21lcl90eXBlIjoiVFJJQUwiLCJsaWNlbnNlX3R5cGUiOiJTQUFTIiwib2JqZWN0X2xpbWl0cyI6eyJtZXRob2RzIjotMSwicHJlbWl1bU1ldGhvZHMiOi0xLCJwdWJsaXNoZWRQcm9qZWN0cyI6MywiYXBpQ2FsbHMiOjIwMDB9LCJjb25uZWN0b3JzIjpbIioiXX0.KDmFH6C1jZuGCAGowOsDHUxz4gSenFiHrvXIsUWYCGsv3SVwhzUpQjc1gXgQCOyFY2qH4lHC15bp_4C_CoGltHtDLAB3DZ5qodTqByXLH_JNsFiH_fU-Gp8rOModNzE87WOPOojkP1dXSzFAbdUhplMzrcsbOgQO0aI1FFXbQYeYgK3z7SOFXC3qcLJOj7QpDlqqYISYVfgSEN9FF8p83uV0x-OG0ql0_KTE2LRHGaQuWMWLMMX-3Mr-qHywNs6GfTyZ6zZgteE-pVma_EXJcQ90rbMBgSNhoqRSyD5o5D3wrYQhmonI_lkb9noJsvKP9HCKNBRcGB2u-92j169xKA
+  flow:
+    source-provider: HUB
+    hub:
+      url: https://api.ol-hub.com
+      api-key: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJhODczZjQ5MS04OTZkLTQ0MDktOWFhZi0wNzYwNDhlMzU5OTkiLCJ0aWQiOiI0ZGFlMGQ0YS0xMDJjLTRlMTctYTk1YS0zYTZjNzc4NjBlYjAiLCJodHRwczovL29sLnRlbmFudHMvcmVnaW9uIjoiVVMiLCJpYXQiOjE2NTc1NzYzNzksImlzcyI6Im9sIiwic3ViIjoiYXV0aDB8NjI5ZjZjNGZhN2Q5NmUwMDZmOGJlYjMwIn0.mLLznLtGsD0HccPA67KZuponXDo86J7FVR3nDJNL1VLwPf4C_T1QfULTUlJDYEwZRzWS2QtGRZqD7E9D0sKZrKXpRLJSWbvcdZnvetrVnd1aRpYUUb96prsnHAv-EC0HjbIgwSyjoxKqRenwk12tjXhI7ZuMaXK8GAn-Mjzdmp2q69yCa_NjeeWCIPWwBmWuGaObMRMH-Unzo0eIU1GjP2ZW4gYJtkHzRygwwYLY94dahzZz1kYwApFO7RB0L3eg4nVFrUzU078QMoj2ZJRl3TYu9ADm6tSBNOP34Vb8pby7QtBmORmzNxsDySAgp-3kQGrDxGlptJGWHGl4wiGbiA
+      project-name: tap-demo
+    agent:
+      enabled: false
+
+---
+# cicsOlTapDemo
+
+ol:
+  cics:
+    project:
+      cicsOlTapDemo:
+        uriMap: /ol/demos
+        baseUrl: http://mainframe.openlegacy.com
+
