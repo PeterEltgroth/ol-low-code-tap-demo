@@ -1,7 +1,7 @@
 accelerator:
   displayName: OL Low Code Tap Demo
   description: OL Low Code Tap Demo
-  iconUrl: https://github.com/PeterEltgroth/account-cics-microservice/raw/main/demo.png
+  iconUrl: https://github.com/PeterEltgroth/ol-low-code-tap-demo/raw/main/demo.png
   tags:
   - open-legacy
   - tap-demo
